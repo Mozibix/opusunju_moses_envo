@@ -84,10 +84,20 @@ body {
             width: 548px;
             position: relative;
 
-            p {
-              font-size: 3rem;
-              font-weight: 900;
-              line-height: 58.09px;
+            .text-content {
+              width: 548px;
+
+
+              p {
+                font-size: 3rem;
+                font-weight: 900;
+                line-height: 58.09px;
+                width: 520px;
+
+                span {
+                  color: $primary;
+                }
+              }
             }
 
             .arrow-curve {
@@ -384,6 +394,7 @@ body {
 
     &-wrapper {
       text-align: center;
+
       .footer-text {
         font-family: Inter;
         font-size: 16px;

@@ -40,7 +40,7 @@ button.see-more {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0em;
-  padding: 1.5rem 4.375rem;
+  padding: 24px 70px;
   margin-top: 45px;
   border-radius: 5px;
   background-color: #fff;
@@ -147,10 +147,19 @@ body {
   position: relative;
 }
 
-.hero .banner_inner .left_wrapper-container p {
+.hero .banner_inner .left_wrapper-container .text-content {
+  width: 548px;
+}
+
+.hero .banner_inner .left_wrapper-container .text-content p {
   font-size: 3rem;
   font-weight: 900;
   line-height: 58.09px;
+  width: 520px;
+}
+
+.hero .banner_inner .left_wrapper-container .text-content p span {
+  color: #02250a;
 }
 
 .hero .banner_inner .left_wrapper-container .arrow-curve {
