@@ -53,7 +53,7 @@ button.see-more {
   button.see-more {
     position: absolute;
     top: 85em;
-    left: 4em;
+    left: 6em;
     padding: 12px 45px;
   }
 }
@@ -69,6 +69,12 @@ body {
 }
 .hero header {
   z-index: 1;
+}
+@media screen and (max-width: 800px) {
+  .hero header {
+    width: 70%;
+    margin-left: 1rem;
+  }
 }
 .hero header .items {
   display: flex;
@@ -121,6 +127,11 @@ body {
   width: 100%;
   z-index: -1;
 }
+@media screen and (max-width: 800px) {
+  .hero .banner {
+    width: 80%;
+  }
+}
 .hero .banner_inner {
   display: flex;
   height: 700px;
@@ -130,16 +141,31 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 800px) {
+  .hero .banner_inner .left {
+    width: 78%;
+  }
+}
 .hero .banner_inner .left_wrapper {
-  height: 70%;
+  height: 78%;
   width: 100%;
 }
 .hero .banner_inner .left_wrapper-container {
   width: 548px;
   position: relative;
 }
+@media screen and (max-width: 800px) {
+  .hero .banner_inner .left_wrapper-container {
+    width: 78%;
+  }
+}
 .hero .banner_inner .left_wrapper-container .text-content {
   width: 548px;
+}
+@media screen and (max-width: 800px) {
+  .hero .banner_inner .left_wrapper-container .text-content {
+    width: 50%;
+  }
 }
 .hero .banner_inner .left_wrapper-container .text-content p {
   font-size: 3rem;
@@ -203,6 +229,11 @@ body {
   margin-top: 53.75rem;
   width: 100%;
 }
+@media screen and (max-width: 800px) {
+  .hero .contents {
+    width: 50%;
+  }
+}
 .hero .contents-inner {
   display: flex;
   height: 100vh;
@@ -263,6 +294,7 @@ body {
 @media screen and (max-width: 800px) {
   .hero .contents .right-side-wrapper .right-side-contents {
     margin-top: -80rem;
+    margin-left: 0px;
   }
 }
 .hero .contents .right-side-wrapper .right-side-contents h2 {
@@ -297,7 +329,7 @@ body {
     font-weight: 200;
     font-size: 15px;
     line-height: 20px;
-    width: 280px;
+    width: 350px;
     margin-bottom: 3rem;
   }
 }
@@ -310,7 +342,6 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero .reports {
-    width: 75%;
     margin-top: -45rem;
     overflow-y: hidden;
     height: 40rem;
@@ -359,6 +390,7 @@ body {
 @media screen and (max-width: 800px) {
   .hero .reports-wrapper .reports-content .recent-reports {
     flex-direction: column;
+    align-items: center;
   }
 }
 .hero .reports-wrapper .reports-content .recent-reports .reports-data {
@@ -474,7 +506,6 @@ body {
 @media screen and (max-width: 800px) {
   .hero .footer {
     height: 60px;
-    width: 75%;
   }
 }
 .hero .footer-wrapper {
