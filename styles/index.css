@@ -164,7 +164,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero .banner_inner .left_wrapper-container .text-content {
-    width: 50%;
+    width: 90%;
   }
 }
 .hero .banner_inner .left_wrapper-container .text-content p {
@@ -294,7 +294,6 @@ body {
 @media screen and (max-width: 800px) {
   .hero .contents .right-side-wrapper .right-side-contents {
     margin-top: -80rem;
-    margin-left: 0px;
   }
 }
 .hero .contents .right-side-wrapper .right-side-contents h2 {
