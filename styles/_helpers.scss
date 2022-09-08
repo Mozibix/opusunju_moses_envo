@@ -23,6 +23,10 @@
   margin-top: 49px;
   border-radius: 5px;
 
+  @media screen and (max-width: 800px) {
+    padding: 0.5rem 2rem;
+  }
+
   &.primary {
     background-color: $primary;
     color: white;
@@ -44,4 +48,11 @@ button.see-more {
   border-radius: 5px;
   background-color: #fff;
   text-transform: capitalize;
+
+  @media screen and (max-width: 800px) {
+    position: absolute;
+    top: 85em;
+    left: 4em;
+    padding: 12px 45px;
+  }
 }

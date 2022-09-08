@@ -9,6 +9,8 @@
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
+
+
 }
 
 // heading
@@ -33,8 +35,15 @@ body {
       align-items: center;
       justify-content: space-between;
 
+      @media screen and (max-width: 800px) {
+        width: 50%;
+      }
+
       .logo {
         width: 11.8125rem;
+        @media screen and (max-width: 800px) {
+          width: 6rem;
+        }
 
         img {
           width: 100%;
@@ -46,7 +55,9 @@ body {
         display: flex;
         margin: 0;
         box-sizing: border-box;
-
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
         .nav-item {
           margin-inline: 1rem;
 
@@ -87,12 +98,17 @@ body {
             .text-content {
               width: 548px;
 
-
               p {
                 font-size: 3rem;
                 font-weight: 900;
                 line-height: 58.09px;
                 width: 520px;
+                @media screen and (max-width: 800px) {
+                  font-size: 1.5rem;
+                  font-weight: 600;
+                  line-height: 30px;
+                  width: 200px;
+                }
 
                 span {
                   color: $primary;
@@ -104,6 +120,9 @@ body {
               position: absolute;
               right: 30%;
               bottom: 10%;
+              @media screen and (max-width: 800px) {
+                display: none;
+              }
             }
           }
         }
@@ -114,6 +133,9 @@ body {
         flex: 1;
         display: flex;
         align-items: center;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
 
         &_wrapper {
           height: 70%;
@@ -155,6 +177,9 @@ body {
     }
 
     .left-side {
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
       &-wrapper {
         position: relative;
         height: 100%;
@@ -206,6 +231,9 @@ body {
           text-align: left;
           margin-left: 10px;
           margin-top: 150px;
+          @media screen and (max-width: 800px) {
+            margin-top: -80rem;
+          }
 
           h2 {
             font-size: 3rem;
@@ -214,6 +242,14 @@ body {
             height: 116px;
             width: 641px;
             margin-bottom: 51px;
+            @media screen and (max-width: 800px) {
+              font-size: 1.5rem;
+              font-weight: 600;
+              line-height: 30px;
+              height: 90px;
+              width: 260px;
+              margin-bottom: 5px;
+            }
           }
 
           P {
@@ -224,6 +260,14 @@ body {
             line-height: 22px;
             width: 572px;
             height: 199px;
+
+            @media screen and (max-width: 800px) {
+              font-weight: 200;
+              font-size: 15px;
+              line-height: 20px;
+              width: 280px;
+              margin-bottom: 3rem;
+            }
           }
         }
       }
@@ -239,6 +283,13 @@ body {
     height: 50.563rem;
     background-color: $primary;
 
+    @media screen and (max-width: 800px) {
+      width: 75%;
+      margin-top: -45rem;
+      overflow-y: hidden;
+      height: 40rem;
+    }
+
     &-wrapper {
       text-align: center;
       align-items: center;
@@ -253,6 +304,12 @@ body {
           text-align: left;
           color: $text-color;
           margin-left: 2rem;
+
+          @media screen and (max-width: 800px) {
+            font-size: 24px;
+            font-weight: 500;
+            margin-left: 0.6rem;
+          }
         }
 
         .line {
@@ -261,11 +318,22 @@ body {
           background-color: $text-color;
           margin-top: -20px;
           margin-left: 2rem;
+
+          @media screen and (max-width: 800px) {
+            height: 0.4rem;
+            width: 6.5rem;
+            margin-top: -10px;
+            margin-left: 0.7rem;
+          }
         }
 
         .recent-reports {
           display: flex;
           justify-content: space-evenly;
+
+          @media screen and (max-width: 800px) {
+            flex-direction: column;
+          }
 
           .reports-data {
             display: flex;
@@ -277,6 +345,10 @@ body {
             box-shadow: 0px 4px 25px 0px #02250a29;
             margin-top: 4.5rem;
 
+            @media screen and (max-width: 800px) {
+              margin-bottom: 1rem;
+            }
+
             .reports-img {
               display: flex;
               height: 207px;
@@ -287,8 +359,8 @@ body {
 
             .information {
               color: $black;
-              margin-top: 15rem;
-              margin-left: -19.7rem;
+              margin-top: 13.6rem;
+              margin-left: -16.7rem;
               z-index: 1;
 
               p.green-text {
@@ -336,6 +408,10 @@ body {
     margin-left: 3.438rem;
     margin-right: 5.438rem;
 
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
     .niger-delta-wrapper {
       p.niger-delta-text {
         height: 116px;
@@ -349,31 +425,40 @@ body {
           line-height: 58px;
           letter-spacing: 0em;
           text-align: left;
+
         }
       }
 
       .img-section {
         display: flex;
-
+  
+      
         .up-img {
           display: flex;
+
+
 
           .img-4 {
             width: 300px;
             height: 257px;
+            
+           
           }
 
           .imgs {
             width: 300px;
             height: 257px;
+       
           }
         }
 
         .down-img {
           all: unset;
           display: flex;
-          margin-top: 18.4rem;
-          margin-left: -85.7rem;
+          margin-top: 16rem;
+          margin-left: -75rem;
+
+        
 
           .imgs {
             width: 300px;
@@ -391,6 +476,12 @@ body {
     height: 92px;
     width: 99.8%;
     border-radius: 0px;
+
+    @media screen and (max-width: 800px) {
+height: 60px;
+width: 75%;
+
+    }
 
     &-wrapper {
       text-align: center;
