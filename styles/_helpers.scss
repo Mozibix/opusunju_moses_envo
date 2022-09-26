@@ -25,7 +25,7 @@
 
   @media screen and (max-width: 800px) {
     padding: 1rem 2rem;
-    margin-top: 0 ;
+    margin-top: 0;
   }
 
   &.primary {
@@ -51,10 +51,8 @@ button.see-more {
   text-transform: capitalize;
 
   @media screen and (max-width: 800px) {
-    position: absolute;
-    top: 100rem;
-    left: 8rem;
+    position: relative;
+    bottom: 102rem;
     padding: 12px 45px;
-  
   }
 }

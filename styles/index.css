@@ -52,9 +52,8 @@ button.see-more {
 }
 @media screen and (max-width: 800px) {
   button.see-more {
-    position: absolute;
-    top: 100rem;
-    left: 8rem;
+    position: relative;
+    bottom: 102rem;
     padding: 12px 45px;
   }
 }
@@ -62,6 +61,7 @@ button.see-more {
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -70,7 +70,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero {
-    height: 250vh;
+    height: 200vh;
   }
 }
 .hero header {
