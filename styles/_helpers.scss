@@ -24,7 +24,8 @@
   border-radius: 5px;
 
   @media screen and (max-width: 800px) {
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
+    margin-top: 0 ;
   }
 
   &.primary {
@@ -51,8 +52,9 @@ button.see-more {
 
   @media screen and (max-width: 800px) {
     position: absolute;
-    top: 85em;
-    left: 6em;
+    top: 100rem;
+    left: 8rem;
     padding: 12px 45px;
+  
   }
 }
