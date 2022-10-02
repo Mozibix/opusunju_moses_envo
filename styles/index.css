@@ -65,12 +65,12 @@ body {
 }
 
 .hero {
-  height: 811px;
+  min-height: 811px;
   position: relative;
 }
 @media screen and (max-width: 800px) {
   .hero {
-    height: 200vh;
+    min-height: 250vh;
   }
 }
 .hero header {
@@ -78,7 +78,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero header {
-    width: 91%;
+    max-width: 91%;
     margin-left: 0.4rem;
   }
 }
@@ -93,7 +93,7 @@ body {
     flex-direction: column;
     position: fixed;
     top: 40px;
-    width: 50%;
+    max-width: 50%;
     align-items: center;
     right: -100%;
     background-color: hsla(0deg, 0%, 100%, 0.1);
@@ -122,7 +122,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero header .nav .logo {
-    width: 6rem;
+    max-width: 6rem;
   }
 }
 .hero header .nav .logo img {
@@ -192,17 +192,27 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero .banner {
-    width: 80%;
+    max-width: 80%;
   }
 }
 .hero .banner_inner {
   display: flex;
   height: 700px;
 }
+@media screen and (max-width: 800px) {
+  .hero .banner_inner {
+    max-height: 400px;
+  }
+}
 .hero .banner_inner .left {
   flex: 1;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .hero .banner_inner .left {
+    max-height: 24rem;
+  }
 }
 .hero .banner_inner .left_wrapper {
   height: 78%;
@@ -222,8 +232,8 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero .banner_inner .left_wrapper-container .text-content {
-    width: 100%;
-    margin-left: -1rem;
+    max-width: 100%;
+    margin-left: -2rem;
   }
 }
 .hero .banner_inner .left_wrapper-container .text-content p {
@@ -237,7 +247,7 @@ body {
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 60px;
-    width: 350px;
+    max-width: 330px;
   }
 }
 .hero .banner_inner .left_wrapper-container .text-content p span {
@@ -352,7 +362,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero .contents .right-side-wrapper .right-side-contents {
-    margin-top: -80rem;
+    margin-top: -60rem;
   }
 }
 .hero .contents .right-side-wrapper .right-side-contents h2 {
@@ -365,11 +375,11 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero .contents .right-side-wrapper .right-side-contents h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 30px;
     height: 90px;
-    width: 350px;
+    max-width: 300px;
   }
 }
 .hero .contents .right-side-wrapper .right-side-contents P {
@@ -379,14 +389,14 @@ body {
   font-size: 18px;
   line-height: 22px;
   width: 572px;
-  height: 199px;
+  min-height: 199px;
 }
 @media screen and (max-width: 800px) {
   .hero .contents .right-side-wrapper .right-side-contents P {
     font-weight: 200;
     font-size: 15px;
     line-height: 20px;
-    width: 350px;
+    max-width: 300px;
     margin-bottom: 3rem;
   }
 }
@@ -399,9 +409,9 @@ body {
 }
 @media screen and (max-width: 800px) {
   .hero .reports {
-    margin-top: -45rem;
     overflow-y: hidden;
     height: 40rem;
+    margin-top: -24rem;
   }
 }
 .hero .reports-wrapper {

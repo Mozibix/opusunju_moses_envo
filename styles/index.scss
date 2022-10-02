@@ -15,17 +15,18 @@ body {
 // heading
 
 .hero {
-  height: 811px;
+  min-height: 811px;
   position: relative;
   @media screen and (max-width: 800px) {
-    height: 200vh;
+    min-height: 250vh;
   }
 
   header {
     z-index: 1;
 
     @media screen and (max-width: 800px) {
-      width: 91%;
+      max-width: 91%;
+
       margin-left: 0.4rem;
     }
 
@@ -39,7 +40,7 @@ body {
         flex-direction: column;
         position: fixed;
         top: 40px;
-        width: 50%;
+        max-width: 50%;
         align-items: center;
         right: -100%;
         background-color: hsl(0 0% 100% /0.1);
@@ -66,7 +67,7 @@ body {
       .logo {
         width: 11.8125rem;
         @media screen and (max-width: 800px) {
-          width: 6rem;
+          max-width: 6rem;
         }
 
         img {
@@ -142,17 +143,23 @@ body {
     z-index: -1;
 
     @media screen and (max-width: 800px) {
-      width: 80%;
+      max-width: 80%;
     }
 
     &_inner {
       display: flex;
       height: 700px;
+      @media screen and (max-width: 800px) {
+        max-height: 400px;
+      }
 
       .left {
         flex: 1;
         display: flex;
         align-items: center;
+        @media screen and (max-width: 800px) {
+          max-height: 24rem;
+        }
 
         &_wrapper {
           height: 78%;
@@ -168,8 +175,8 @@ body {
             .text-content {
               width: 548px;
               @media screen and (max-width: 800px) {
-                width: 100%;
-                margin-left: -1rem;
+                max-width: 100%;
+                margin-left: -2rem;
               }
 
               p {
@@ -182,7 +189,7 @@ body {
                   font-size: 2.5rem;
                   font-weight: 600;
                   line-height: 60px;
-                  width: 350px;
+                  max-width: 330px;
                 }
 
                 span {
@@ -310,7 +317,7 @@ body {
           margin-left: 10px;
           margin-top: 150px;
           @media screen and (max-width: 800px) {
-            margin-top: -80rem;
+            margin-top: -60rem;
           }
 
           h2 {
@@ -322,11 +329,11 @@ body {
             margin-bottom: 51px;
 
             @media screen and (max-width: 800px) {
-              font-size: 2rem;
+              font-size: 1.5rem;
               font-weight: 600;
               line-height: 30px;
               height: 90px;
-              width: 350px;
+              max-width: 300px;
             }
           }
 
@@ -337,13 +344,13 @@ body {
             font-size: 18px;
             line-height: 22px;
             width: 572px;
-            height: 199px;
+            min-height: 199px;
 
             @media screen and (max-width: 800px) {
               font-weight: 200;
               font-size: 15px;
               line-height: 20px;
-              width: 350px;
+              max-width: 300px;
               margin-bottom: 3rem;
             }
           }
@@ -362,9 +369,9 @@ body {
     background-color: $primary;
 
     @media screen and (max-width: 800px) {
-      margin-top: -45rem;
       overflow-y: hidden;
       height: 40rem;
+      margin-top: -24rem;
     }
 
     &-wrapper {
