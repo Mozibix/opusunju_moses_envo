@@ -1,0 +1,61 @@
+@import "./variables";
+@import "./helpers";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+
+
+  .niger-delta-section {
+    margin-left: 3.438rem;
+    margin-right: 5.438rem;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    .niger-delta-wrapper {
+      p.niger-delta-text {
+        height: 116px;
+        width: 705px;
+        border-radius: nullpx;
+
+        & {
+          font-family: Inter;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 58px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+
+      .img-section {
+        display: flex;
+
+        .up-img {
+          display: flex;
+
+          .img-4 {
+            width: 300px;
+            height: 257px;
+          }
+
+          .imgs {
+            width: 300px;
+            height: 257px;
+          }
+        }
+
+        .down-img {
+          all: unset;
+          display: flex;
+          margin-top: 16rem;
+          margin-left: -75rem;
+
+          .imgs {
+            width: 300px;
+            height: 257px;
+          }
+        }
+      }
+    }
+  }
